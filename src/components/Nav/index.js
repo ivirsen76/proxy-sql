@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 export default props => {
     return (
         <nav className="navbar navbar-expand navbar-light bg-light">
-            <div class="container">
+            <div className="container">
                 <Link className="navbar-brand" to="/">
                     Home
                 </Link>
