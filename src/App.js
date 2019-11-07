@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Settings from "./pages/Settings";
 import Words from "./pages/Words";
+import Mode from "./pages/Mode";
 import style from "./App.module.css";
 
 export default () => {
@@ -16,6 +17,7 @@ export default () => {
                         <Route exact path="/" component={Home} />
                         <Route exact path="/settings" component={Settings} />
                         <Route exact path="/words" component={Words} />
+                        <Route exact path="/mode" component={Mode} />
                     </Switch>
                 </div>
             </Router>

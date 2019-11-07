@@ -3,7 +3,7 @@ import React from 'react';
 export default props => {
     return (
         <div>
-            <h2>Keywords</h2>
+            <h2>Mode</h2>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam
                 ipsa laboriosam architecto neque corrupti vel quam illum, amet
