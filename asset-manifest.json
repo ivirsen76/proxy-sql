@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/proxy-sql/static/css/main.ea01f3e8.chunk.css",
-    "main.js": "/proxy-sql/static/js/main.2db9b8fc.chunk.js",
-    "main.js.map": "/proxy-sql/static/js/main.2db9b8fc.chunk.js.map",
+    "main.js": "/proxy-sql/static/js/main.19d0a838.chunk.js",
+    "main.js.map": "/proxy-sql/static/js/main.19d0a838.chunk.js.map",
     "runtime-main.js": "/proxy-sql/static/js/runtime-main.27845a07.js",
     "runtime-main.js.map": "/proxy-sql/static/js/runtime-main.27845a07.js.map",
     "static/js/2.c3a983e4.chunk.js": "/proxy-sql/static/js/2.c3a983e4.chunk.js",
     "static/js/2.c3a983e4.chunk.js.map": "/proxy-sql/static/js/2.c3a983e4.chunk.js.map",
     "index.html": "/proxy-sql/index.html",
-    "precache-manifest.e7dcaef8269dd25bc11948d4fd27b1dc.js": "/proxy-sql/precache-manifest.e7dcaef8269dd25bc11948d4fd27b1dc.js",
+    "precache-manifest.8358119de3e131f292847bf3c5fcacab.js": "/proxy-sql/precache-manifest.8358119de3e131f292847bf3c5fcacab.js",
     "service-worker.js": "/proxy-sql/service-worker.js",
     "static/css/main.ea01f3e8.chunk.css.map": "/proxy-sql/static/css/main.ea01f3e8.chunk.css.map"
   },
@@ -16,6 +16,6 @@
     "static/js/runtime-main.27845a07.js",
     "static/js/2.c3a983e4.chunk.js",
     "static/css/main.ea01f3e8.chunk.css",
-    "static/js/main.2db9b8fc.chunk.js"
+    "static/js/main.19d0a838.chunk.js"
   ]
 }
