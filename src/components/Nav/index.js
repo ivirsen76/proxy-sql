@@ -7,7 +7,7 @@ export default props => {
         <nav className="navbar navbar-expand-sm navbar-light bg-light">
             <div className="container">
                 <Link className="navbar-brand" to="/">
-                    Home
+                    Proxy SQL
                 </Link>
                 <button
                     className="navbar-toggler"
