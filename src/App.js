@@ -5,11 +5,13 @@ import Home from "./pages/Home";
 import Settings from "./pages/Settings";
 import Words from "./pages/Words";
 import Mode from "./pages/Mode";
+import { Provider } from 'react-redux'
+import store from './store.js'
 import style from "./App.module.css";
 
 export default () => {
     return (
-        <div>
+        <Provider store={store}>
             <Router>
                 <Nav />
                 <div className={"container " + style.body}>
@@ -21,6 +23,6 @@ export default () => {
                     </Switch>
                 </div>
             </Router>
-        </div>
+        </Provider>
     );
 };
