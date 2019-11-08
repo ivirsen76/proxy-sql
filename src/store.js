@@ -3,7 +3,7 @@ import { persistStore, persistReducer } from "redux-persist";
 import storage from "redux-persist/lib/storage";
 import reducer from "./reducers/main.js";
 
-const persistConfig = { key: "root", storage };
+const persistConfig = { key: "proxy", storage };
 const persistedReducer = persistReducer(persistConfig, reducer);
 
 export const store = createStore(
