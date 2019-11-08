@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.ea01f3e8.chunk.css",
-    "main.js": "/static/js/main.67781633.chunk.js",
-    "main.js.map": "/static/js/main.67781633.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.0865d7a1.js",
-    "runtime-main.js.map": "/static/js/runtime-main.0865d7a1.js.map",
-    "static/js/2.c3a983e4.chunk.js": "/static/js/2.c3a983e4.chunk.js",
-    "static/js/2.c3a983e4.chunk.js.map": "/static/js/2.c3a983e4.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.7aeb30cbc1596400fbd8dd4d6b451944.js": "/precache-manifest.7aeb30cbc1596400fbd8dd4d6b451944.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.ea01f3e8.chunk.css.map": "/static/css/main.ea01f3e8.chunk.css.map"
+    "main.css": "/proxy-sql/static/css/main.ea01f3e8.chunk.css",
+    "main.js": "/proxy-sql/static/js/main.24ee95d6.chunk.js",
+    "main.js.map": "/proxy-sql/static/js/main.24ee95d6.chunk.js.map",
+    "runtime-main.js": "/proxy-sql/static/js/runtime-main.27845a07.js",
+    "runtime-main.js.map": "/proxy-sql/static/js/runtime-main.27845a07.js.map",
+    "static/js/2.c3a983e4.chunk.js": "/proxy-sql/static/js/2.c3a983e4.chunk.js",
+    "static/js/2.c3a983e4.chunk.js.map": "/proxy-sql/static/js/2.c3a983e4.chunk.js.map",
+    "index.html": "/proxy-sql/index.html",
+    "precache-manifest.6eae07a8dca16ef0e3dc9a3c4082c848.js": "/proxy-sql/precache-manifest.6eae07a8dca16ef0e3dc9a3c4082c848.js",
+    "service-worker.js": "/proxy-sql/service-worker.js",
+    "static/css/main.ea01f3e8.chunk.css.map": "/proxy-sql/static/css/main.ea01f3e8.chunk.css.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.0865d7a1.js",
+    "static/js/runtime-main.27845a07.js",
     "static/js/2.c3a983e4.chunk.js",
     "static/css/main.ea01f3e8.chunk.css",
-    "static/js/main.67781633.chunk.js"
+    "static/js/main.24ee95d6.chunk.js"
   ]
 }
