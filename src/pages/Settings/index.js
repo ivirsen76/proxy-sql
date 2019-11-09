@@ -4,6 +4,14 @@ import FormikInput from "components/FormikInput";
 import { useSelector, useDispatch } from "react-redux";
 import { setDatabase } from "reducers/main.js";
 import notification from "helpers/notification";
+import * as yup from "yup";
+
+const validationSchema = yup.object().shape({
+    hostname: yup.string().required(),
+    username: yup.string().required(),
+    password: yup.string().required(),
+    port: yup.string().required()
+});
 
 export default () => {
     const database = useSelector(state => state.database);
@@ -21,6 +29,7 @@ export default () => {
             <div style={{ maxWidth: "400px" }}>
                 <Formik
                     initialValues={database}
+                    validationSchema={validationSchema}
                     onSubmit={onSubmit}
                 >
                     {({ isSubmitting }) => (
@@ -51,7 +60,7 @@ export default () => {
                                 type="submit"
                                 disabled={isSubmitting}
                             >
-                                {isSubmitting ? 'Submitting' : 'Submit'}
+                                {isSubmitting ? "Submitting" : "Submit"}
                             </button>
                         </Form>
                     )}

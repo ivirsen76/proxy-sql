@@ -5,14 +5,14 @@ export default ({field, form, label, children}) => {
     const showError = error && form.submitCount > 0;
 
     return (
-        <div className={'form-group ' + (showError ? 'has-error' : '')}>
+        <div className="form-group">
             {label && (
                 <label className="control-label" htmlFor={field.name}>
                     {label}
                 </label>
             )}
             {children}
-            {showError && <div className="help-block">{error}</div>}
+            {showError && <div className="invalid-feedback">{error}</div>}
         </div>
     );
 }
