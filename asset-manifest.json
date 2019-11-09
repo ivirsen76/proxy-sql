@@ -1,21 +1,21 @@
 {
   "files": {
     "main.css": "/proxy-sql/static/css/main.01cc4089.chunk.css",
-    "main.js": "/proxy-sql/static/js/main.e70bbad2.chunk.js",
-    "main.js.map": "/proxy-sql/static/js/main.e70bbad2.chunk.js.map",
+    "main.js": "/proxy-sql/static/js/main.36434178.chunk.js",
+    "main.js.map": "/proxy-sql/static/js/main.36434178.chunk.js.map",
     "runtime-main.js": "/proxy-sql/static/js/runtime-main.27845a07.js",
     "runtime-main.js.map": "/proxy-sql/static/js/runtime-main.27845a07.js.map",
-    "static/js/2.6cd790e9.chunk.js": "/proxy-sql/static/js/2.6cd790e9.chunk.js",
-    "static/js/2.6cd790e9.chunk.js.map": "/proxy-sql/static/js/2.6cd790e9.chunk.js.map",
+    "static/js/2.d1a6acf8.chunk.js": "/proxy-sql/static/js/2.d1a6acf8.chunk.js",
+    "static/js/2.d1a6acf8.chunk.js.map": "/proxy-sql/static/js/2.d1a6acf8.chunk.js.map",
     "index.html": "/proxy-sql/index.html",
-    "precache-manifest.d79ea2d8068dfe8f36288d1a6fdf5182.js": "/proxy-sql/precache-manifest.d79ea2d8068dfe8f36288d1a6fdf5182.js",
+    "precache-manifest.89dd39af33c485abc04b911caab69f69.js": "/proxy-sql/precache-manifest.89dd39af33c485abc04b911caab69f69.js",
     "service-worker.js": "/proxy-sql/service-worker.js",
     "static/css/main.01cc4089.chunk.css.map": "/proxy-sql/static/css/main.01cc4089.chunk.css.map"
   },
   "entrypoints": [
     "static/js/runtime-main.27845a07.js",
-    "static/js/2.6cd790e9.chunk.js",
+    "static/js/2.d1a6acf8.chunk.js",
     "static/css/main.01cc4089.chunk.css",
-    "static/js/main.e70bbad2.chunk.js"
+    "static/js/main.36434178.chunk.js"
   ]
 }

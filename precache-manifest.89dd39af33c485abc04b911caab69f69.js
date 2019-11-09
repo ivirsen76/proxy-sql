@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0dca256cf017866f3cceb9ec4bba546f",
+    "revision": "8be558504303cf0a7b59dfe75cdeb0f9",
     "url": "/proxy-sql/index.html"
   },
   {
-    "revision": "f49499aa4ac51270120a",
+    "revision": "ab7a8c919f49465c4881",
     "url": "/proxy-sql/static/css/main.01cc4089.chunk.css"
   },
   {
-    "revision": "f05e4a6fd4f289c7e8b1",
-    "url": "/proxy-sql/static/js/2.6cd790e9.chunk.js"
+    "revision": "c37ce0421af609b54276",
+    "url": "/proxy-sql/static/js/2.d1a6acf8.chunk.js"
   },
   {
-    "revision": "f49499aa4ac51270120a",
-    "url": "/proxy-sql/static/js/main.e70bbad2.chunk.js"
+    "revision": "ab7a8c919f49465c4881",
+    "url": "/proxy-sql/static/js/main.36434178.chunk.js"
   },
   {
     "revision": "c95243bbbfe815daf95d",
