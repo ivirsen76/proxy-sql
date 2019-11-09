@@ -10,7 +10,11 @@ const validationSchema = yup.object().shape({
     hostname: yup.string().required(),
     username: yup.string().required(),
     password: yup.string().required(),
-    port: yup.string().required()
+    port: yup
+        .number('from')
+        .required()
+        .min(1)
+        .max(9999)
 });
 
 export default () => {
@@ -60,7 +64,9 @@ export default () => {
                                 type="submit"
                                 disabled={isSubmitting}
                             >
-                                {isSubmitting && <span className="spinner-border spinner-border-sm mr-2" />}
+                                {isSubmitting && (
+                                    <span className="spinner-border spinner-border-sm mr-2" />
+                                )}
                                 Submit
                             </button>
                         </Form>

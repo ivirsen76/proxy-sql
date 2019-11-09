@@ -25,13 +25,37 @@ export const setMode = createAction(SET_MODE);
 export const setWords = createAction(SET_WORDS);
 export const setSelectedWords = createAction(SET_SELECTED_WORDS);
 
+export const loadData = () => {
+    return async (dispatch, getState) => {
+        const promises = [loadDatabase, loadMode, loadWords];
+        await Promise.all(promises);
+    };
+};
+
+export const loadDatabase = () => {
+    return async (dispatch, getState) => {
+        await new Promise(resolve => setTimeout(resolve, 1000));
+    };
+};
+
+export const loadMode = () => {
+    return async (dispatch, getState) => {
+        await new Promise(resolve => setTimeout(resolve, 1000));
+    };
+};
+
+export const loadWords = () => {
+    return async (dispatch, getState) => {
+        await new Promise(resolve => setTimeout(resolve, 1000));
+    };
+};
+
 export const setDatabaseAndSave = (values) => {
     return async (dispatch, getState) => {
         await new Promise(resolve => setTimeout(resolve, 1000));
         dispatch(setDatabase(values));
     };
 };
-
 
 // Reducer
 export default handleActions(
