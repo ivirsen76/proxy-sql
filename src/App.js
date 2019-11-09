@@ -6,6 +6,7 @@ import Home from "./pages/Home";
 import Settings from "./pages/Settings";
 import Words from "./pages/Words";
 import Mode from "./pages/Mode";
+import NotFound from "./pages/NotFound";
 import { Provider } from "react-redux";
 import { store, persistor } from "./store.js";
 import style from "./App.module.css";
@@ -26,6 +27,7 @@ export default () => {
                             />
                             <Route exact path="/words" component={Words} />
                             <Route exact path="/mode" component={Mode} />
+                            <Route component={NotFound} />
                         </Switch>
                     </div>
                 </Router>
