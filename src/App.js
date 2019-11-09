@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { PersistGate } from "redux-persist/integration/react";
 import Home from "./pages/Home";
 import Settings from "./pages/Settings";
-import Words from "./pages/Words";
+import Keywords from "./pages/Keywords";
 import Mode from "./pages/Mode";
 import NotFound from "./pages/NotFound";
 import { Provider } from "react-redux";
@@ -40,7 +40,7 @@ export default () => {
                                 path="/settings"
                                 component={Settings}
                             />
-                            <Route exact path="/words" component={Words} />
+                            <Route exact path="/keywords" component={Keywords} />
                             <Route exact path="/mode" component={Mode} />
                             <Route component={NotFound} />
                         </Switch>

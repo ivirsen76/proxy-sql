@@ -6,24 +6,32 @@ export const initialState = {
         hostname: '',
         username: '',
         password: '',
-        port: ''
+        port: '',
     },
     mode: 'record',
-    words: [],
-    selectedWords: [],
+    keywords: [
+        { id: 1, text: 'UPDATEXML' },
+        { id: 2, text: 'PROCEDURE ANALYSE' },
+        { id: 3, text: 'JSON_KEYS\\(' },
+        { id: 4, text: 'ORD\\(MID\\(' },
+        { id: 5, text: 'INFORMATION_SCHEMA\\.' },
+        { id: 6, text: 'JSON_STORAGE_FREE' },
+        { id: 7, text: 'SESSION_USER\\(' },
+    ],
+    selectedKeywords: [2, 4],
 };
 
 // Actions
 const SET_DATABASE = 'proxy/settings/SET_DATABASE';
 const SET_MODE = 'proxy/settings/SET_MODE';
-const SET_WORDS = 'proxy/settings/SET_WORDS';
-const SET_SELECTED_WORDS = 'proxy/settings/SET_SELECTED_WORDS';
+const SET_KEYWORDS = 'proxy/settings/SET_KEYWORDS';
+const SET_SELECTED_KEYWORDS = 'proxy/settings/SET_SELECTED_KEYWORDS';
 
 // Action Creators
 export const setDatabase = createAction(SET_DATABASE);
 export const setMode = createAction(SET_MODE);
-export const setWords = createAction(SET_WORDS);
-export const setSelectedWords = createAction(SET_SELECTED_WORDS);
+export const setKeywords = createAction(SET_KEYWORDS);
+export const setSelectedKeywords = createAction(SET_SELECTED_KEYWORDS);
 
 export const loadDatabase = () => {
     return async (dispatch, getState) => {
@@ -37,7 +45,7 @@ export const loadMode = () => {
     };
 };
 
-export const loadWords = () => {
+export const loadKeywords = () => {
     return async (dispatch, getState) => {
         await new Promise(resolve => setTimeout(resolve, 1000));
     };
@@ -45,22 +53,29 @@ export const loadWords = () => {
 
 export const loadData = () => {
     return async (dispatch, getState) => {
-        const promises = [dispatch(loadDatabase()), dispatch(loadMode()), dispatch(loadWords())];
+        const promises = [dispatch(loadDatabase()), dispatch(loadMode()), dispatch(loadKeywords())];
         await Promise.all(promises);
     };
 };
 
-export const setDatabaseAndSave = (values) => {
+export const setDatabaseAndSave = values => {
     return async (dispatch, getState) => {
         await new Promise(resolve => setTimeout(resolve, 1000));
         dispatch(setDatabase(values));
     };
 };
 
-export const setModeAndSave = (value) => {
+export const setModeAndSave = value => {
     return async (dispatch, getState) => {
         await new Promise(resolve => setTimeout(resolve, 1000));
         dispatch(setMode(value));
+    };
+};
+
+export const setSelectedKeywordsAndSave = value => {
+    return async (dispatch, getState) => {
+        await new Promise(resolve => setTimeout(resolve, 1000));
+        dispatch(setSelectedKeywords(value));
     };
 };
 
@@ -75,13 +90,13 @@ export default handleActions(
             ...state,
             mode: action.payload,
         }),
-        [SET_WORDS]: (state, action) => ({
+        [SET_KEYWORDS]: (state, action) => ({
             ...state,
-            words: action.payload,
+            keywords: action.payload,
         }),
-        [SET_SELECTED_WORDS]: (state, action) => ({
+        [SET_SELECTED_KEYWORDS]: (state, action) => ({
             ...state,
-            selectedWords: action.payload,
+            selectedKeywords: action.payload,
         }),
     },
     initialState

@@ -27,7 +27,7 @@ export default props => {
                 >
                     <ul className="navbar-nav mr-auto">
                         <NavLink to="/settings">Settings</NavLink>
-                        <NavLink to="/words">Keywords</NavLink>
+                        <NavLink to="/keywords">Keywords</NavLink>
                         <NavLink to="/mode">Mode</NavLink>
                     </ul>
                 </div>
