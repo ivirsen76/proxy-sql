@@ -2,7 +2,7 @@ import React from "react";
 import { Formik, Field, Form } from "formik";
 import FormikInput from "components/FormikInput";
 import { useSelector, useDispatch } from "react-redux";
-import { setDatabase } from "reducers/main.js";
+import { setDatabaseAndSave } from "reducers/main.js";
 import notification from "helpers/notification";
 import * as yup from "yup";
 
@@ -17,9 +17,8 @@ export default () => {
     const database = useSelector(state => state.database);
     const dispatch = useDispatch();
 
-    const onSubmit = values => {
-        console.log(values);
-        dispatch(setDatabase(values));
+    const onSubmit = async values => {
+        await dispatch(setDatabaseAndSave(values));
         notification("Settings has been updated");
     };
 
@@ -61,7 +60,8 @@ export default () => {
                                 type="submit"
                                 disabled={isSubmitting}
                             >
-                                {isSubmitting ? "Submitting" : "Submit"}
+                                {isSubmitting && <span className="spinner-border spinner-border-sm mr-2" />}
+                                Submit
                             </button>
                         </Form>
                     )}
