@@ -14,7 +14,7 @@ export default () => {
     return (
         <Provider store={store}>
             <PersistGate loading={null} persistor={persistor}>
-                <Router basename="/proxy-sql">
+                <Router basename={process.env.PUBLIC_URL}>
                     <Nav />
                     <div className={"container " + style.body}>
                         <Switch>
