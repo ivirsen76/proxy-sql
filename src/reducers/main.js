@@ -57,6 +57,13 @@ export const setDatabaseAndSave = (values) => {
     };
 };
 
+export const setModeAndSave = (value) => {
+    return async (dispatch, getState) => {
+        await new Promise(resolve => setTimeout(resolve, 1000));
+        dispatch(setMode(value));
+    };
+};
+
 // Reducer
 export default handleActions(
     {
