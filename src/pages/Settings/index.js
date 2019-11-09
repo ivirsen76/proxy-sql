@@ -47,6 +47,7 @@ export default () => {
                             <Field
                                 name="password"
                                 component={FormikInput}
+                                type="password"
                                 label="Password"
                             />
                             <Field
