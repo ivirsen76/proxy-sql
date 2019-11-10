@@ -21,7 +21,7 @@ describe.skip('/config', () => {
 
     it('should update config values', async () => {
         await request
-            .put('/config')
+            .patch('/config')
             .send({
                 hostname: 'localhost',
                 username: 'root',
@@ -33,9 +33,19 @@ describe.skip('/config', () => {
             .expect(200);
     });
 
+    it('should update only mode', async () => {
+        await request
+            .patch('/config')
+            .send({
+                mode: 'notification',
+            })
+            .expect('Content-Type', /json/)
+            .expect(200);
+    });
+
     it('should return errors during updating', async () => {
         const response = await request
-            .put('/config')
+            .patch('/config')
             .send({
                 hostname: 'localhost',
                 username: 'root',
@@ -84,7 +94,7 @@ describe.skip('/keywords', () => {
 
     it('should update keyword', async () => {
         await request
-            .put('/keywords/2')
+            .patch('/keywords/2')
             .send({
                 selected: true,
             })
@@ -94,7 +104,7 @@ describe.skip('/keywords', () => {
 
     it('should return errors during updating', async () => {
         const response = await request
-            .put('/keywords/2')
+            .patch('/keywords/2')
             .send({
                 selected: 'wrong',
             })
