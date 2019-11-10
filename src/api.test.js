@@ -43,7 +43,7 @@ describe.skip('/config', () => {
             })
             .expect('Content-Type', /json/)
             .expect(422);
-        expect(response).toEqual({
+        expect(response.body).toEqual({
             errors: {
                 password: ['Password is required', 'Password should be more than 8 letters'],
                 port: ['The port must be a number'],
@@ -96,7 +96,7 @@ describe.skip('/keywords', () => {
             })
             .expect('Content-Type', /json/)
             .expect(422);
-        expect(response).toEqual({
+        expect(response.body).toEqual({
             errors: {
                 selected: ['It should be a boolean'],
             },
