@@ -46,7 +46,7 @@ export default props => {
                             {isSubmitting && (
                                 <span className="spinner-border spinner-border-sm mr-2" />
                             )}
-                            Submit
+                            Update
                         </button>
                     </Form>
                 )}

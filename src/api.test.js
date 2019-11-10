@@ -9,11 +9,13 @@ describe.skip('/config', () => {
             .expect('Content-Type', /json/)
             .expect(200);
         expect(response.body).toEqual({
-            hostname: 'something',
-            username: 'something',
-            password: 'something',
-            port: 'something',
-            mode: 'record',
+            data: {
+                hostname: 'something',
+                username: 'something',
+                password: 'something',
+                port: 'something',
+                mode: 'record',
+            },
         });
     });
 
@@ -59,23 +61,25 @@ describe.skip('/keywords', () => {
             .get('/keywords')
             .expect('Content-Type', /json/)
             .expect(200);
-        expect(response.body).toEqual(
-            {
-                id: 1,
-                text: 'UPDATEXML',
-                selected: true,
-            },
-            {
-                id: 2,
-                text: 'PROCEDURE ANALYSE',
-                selected: false,
-            },
-            {
-                id: 3,
-                text: 'JSON_STORAGE_FREE',
-                selected: true,
-            }
-        );
+        expect(response.body).toEqual({
+            data: [
+                {
+                    id: 1,
+                    text: 'UPDATEXML',
+                    selected: true,
+                },
+                {
+                    id: 2,
+                    text: 'PROCEDURE ANALYSE',
+                    selected: false,
+                },
+                {
+                    id: 3,
+                    text: 'JSON_STORAGE_FREE',
+                    selected: true,
+                },
+            ],
+        });
     });
 
     it('should update keyword', async () => {
