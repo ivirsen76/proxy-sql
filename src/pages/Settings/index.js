@@ -11,7 +11,7 @@ const validationSchema = yup.object().shape({
     username: yup.string().required(),
     password: yup.string().required(),
     port: yup
-        .number('from')
+        .number()
         .required()
         .min(1)
         .max(9999),
