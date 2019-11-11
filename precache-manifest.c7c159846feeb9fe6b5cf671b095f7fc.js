@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1da356f68f81887e8357ef3c42d2a91c",
+    "revision": "fa2b2a199ca16717cb40f810b13e6681",
     "url": "/proxy-sql/index.html"
   },
   {
-    "revision": "fa32a0e91640d5b950ab",
+    "revision": "de6935b23fa6c8c419ec",
     "url": "/proxy-sql/static/css/main.01cc4089.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/proxy-sql/static/js/2.63ddae3a.chunk.js"
   },
   {
-    "revision": "fa32a0e91640d5b950ab",
-    "url": "/proxy-sql/static/js/main.06294f7f.chunk.js"
+    "revision": "de6935b23fa6c8c419ec",
+    "url": "/proxy-sql/static/js/main.935851af.chunk.js"
   },
   {
     "revision": "c95243bbbfe815daf95d",
