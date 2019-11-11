@@ -1,19 +1,14 @@
-import React, { useState, useEffect } from "react";
-import ReactDOM from "react-dom";
-import style from "./notification.module.css";
+import React, { useState, useEffect } from 'react';
+import ReactDOM from 'react-dom';
+import style from './notification.module.css';
 
-const Alert = ({
-    message = "Are you sure?",
-    type = "success",
-    duration = 5000,
-    cleanup
-}) => {
+const Alert = ({ message = 'Are you sure?', type = 'success', duration = 5000, cleanup }) => {
     const [rightPosition, setRightPosition] = useState(null);
 
     useEffect(() => {
         setTimeout(() => {
             setRightPosition('0px');
-        });
+        }, 100);
 
         if (duration > 0) {
             setTimeout(abort, duration);
@@ -29,15 +24,11 @@ const Alert = ({
         <div
             className={style.alert}
             style={{
-                ...(rightPosition ? { right: rightPosition } : {})
+                ...(rightPosition ? { right: rightPosition } : {}),
             }}
         >
             <div className={`alert alert-${type}`}>
-                <button
-                    type="button"
-                    className={"close " + style.close}
-                    onClick={abort}
-                >
+                <button type="button" className={'close ' + style.close} onClick={abort}>
                     &times;
                 </button>
                 {message}
@@ -47,23 +38,23 @@ const Alert = ({
 };
 
 export default options => {
-    if (typeof options === "string") {
+    if (typeof options === 'string') {
         options = {
-            message: options
+            message: options,
         };
     }
 
-    let wrapper = document.getElementById("proxy-notification-wrapper");
+    let wrapper = document.getElementById('proxy-notification-wrapper');
     if (!wrapper) {
-        wrapper = document.body.appendChild(document.createElement("div"));
-        wrapper.id = "proxy-notification-wrapper";
+        wrapper = document.body.appendChild(document.createElement('div'));
+        wrapper.id = 'proxy-notification-wrapper';
         wrapper.className = style.wrapper;
     }
 
-    const target = wrapper.appendChild(document.createElement("div"));
+    const target = wrapper.appendChild(document.createElement('div'));
     const cleanup = () => {
         ReactDOM.unmountComponentAtNode(target);
-        setTimeout(target.remove);
+        setTimeout(() => target.remove());
     };
 
     ReactDOM.render(<Alert {...options} cleanup={cleanup} />, target);
